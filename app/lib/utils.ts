@@ -67,3 +67,7 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
+
+export function getEntries(formData: FormData) {
+  return Object.fromEntries(formData.entries());
+}
